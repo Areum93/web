@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="showImage()">
+    <img id="introImg">
+
+    <script scr="script.js">
+
+
+var imgArray = new Array();
+imgArray[0] = "images/photo1.jpg";
+imgArray[1] = "images/photo2.jpg";
+imgArray[2] = "images/photo3.jpg";
+imgArray[3] = "images/photo4.jpg";
+
+function showImage(){
+    var imgNum = Math.round(Math.random()*3);
+    var objImg = document.getElementById("introImg");
+    objImg.src = imgArray[imgNum];
+}
+
+    </script>
+
+</body>
+</html>
