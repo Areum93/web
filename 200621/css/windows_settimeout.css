@@ -1,0 +1,36 @@
+/* .inner{
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    min-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 10px;
+    height: 45px;
+    box-sizing: border-box;
+}
+.fixinner{
+    position: fixed;
+} */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.jbTitle{
+    text-align: center;
+}
+.jbMenu{
+    text-align: center;
+    background-color: yellow;
+    padding: 10px 0px;
+    width: 100%;
+}
+.jbContent{
+    height: 2000px;
+}
+.jbFixed{
+    position: fixed;
+    top: 0px;
+}

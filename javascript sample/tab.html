@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <link rel="stylesheet" href="css/tab.css">
+</head>
+<body>
+    <div id="tab-menu">
+        <div id="tab-btn">
+            <ul>
+                <li class="btn1"><a href="#">Tab1</a></li>
+                <li class="btn2"><a href="#">Tab2</a></li>
+                <li class="btn3"><a href="#">Tab3</a></li>
+                <li class="btn4"><a href="#">Tab4</a></li>
+            </ul>
+        </div>
+        <div id="tab-cont" class="img1">
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $("#tab-btn ul li").click(function(e){
+            e.preventDefault();
+            var target = $(this);
+            var index = target.index()+1;
+            target.find("a").text("Menu"+index);
+            $("#tab-cont").removeClass().addClass("img"+index)
+        });
+     });
+
+    </script>
+
+</body>
+</html>

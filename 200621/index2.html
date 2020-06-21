@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper/bxslider/slick</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <style>
+        .bx-wrapper{
+            box-shadow: 0 !important;
+            border:0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="bxslider">
+        <div class="slider01">
+            <img src="images/photo01.jpg" alt="">
+        </div>
+        <div class="slider02">
+            <img src="images/photo02.jpg" alt="">
+        </div>
+        <div class="slider03">
+            <img src="images/photo03.jpg" alt="">
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(function(){
+            $('.bxslider').bxSlider({
+                mode:'vertical',
+                speed: 500,
+                captions: true,
+                slideWidth: 1000
+            });
+        });
+    </script>
+</body>
+</html>
